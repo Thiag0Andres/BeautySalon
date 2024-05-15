@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Salon</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+        padding: 20px;
+        border-bottom: 1px solid #e4e4e4;
+      }
+      .logo {
+        width: 164px;
+        height: 25px;
+        margin-left: 20px;
+      }
+      nav {
+        display: flex;
+        margin-right: 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #0f241d;
+        font-size: 16px;
+        font-weight: regular;
+        margin-left: 20px;
+        padding-bottom: 10px;
+      }
+      nav a:hover,
+      nav a.active {
+        color: #69b99d;
+      }
+      section {
+        padding: 50px 20px;
+        display: flex;
+        flex-wrap: wrap; /* Adicionado para que os elementos quebrem linha em telas pequenas */
+        justify-content: space-between;
+        align-items: center;
+      }
+      .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin-bottom: 20px; /* Adicionado espaço entre as seções */
+      }
+      .section-content h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0f241d;
+        margin-bottom: 10px;
+      }
+      .section-content p {
+        font-size: 18px;
+        color: #767676;
+        margin-bottom: 10px;
+      }
+      .button {
+        height: 56px;
+        background-color: #69b99d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: medium;
+        color: #f9f9f9;
+        padding: 10px 20px;
+        margin-bottom: 10px; /* Adicionado espaço entre o botão e o texto */
+      }
+      .image-container {
+        width: 50%;
+        text-align: center;
+      }
+      .image-container img {
+        width: 100%; /* A imagem agora ocupará 100% da largura da div pai */
+        max-width: 561px; /* Limitando a largura máxima da imagem */
+        height: auto; /* Altura automática para manter a proporção */
+      }
+      .about-us {
+        width: 50%;
+        text-align: center;
+      }
+      .about-us h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0f241d;
+        margin-bottom: 10px;
+      }
+      .about-us p {
+        font-size: 18px;
+        color: #767676;
+        margin-bottom: 10px;
+      }
+
+      /* Adicionando regras de mídia query para telas menores */
+      @media (max-width: 768px) {
+        .section-content,
+        .image-container,
+        .about-us {
+          width: 100%; /* Altera a largura para ocupar 100% da tela */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="images/Logo.png" alt="Logo" /></div>
+      <nav>
+        <a href="#inicio" class="active">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Depoimentos</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+    <section id="#inicio">
+      <div class="section-content">
+        <h1>Saúde natural para os seus cabelos</h1>
+        <p>
+          Um salão exclusivo em São Paulo, especializado em tratamentos naturais
+        </p>
+        <button class="button">Agendar um horário</button>
+      </div>
+      <div class="image-container">
+        <img src="images/Img.png" alt="Imagem do salão de beleza" />
+      </div>
+    </section>
+    <section>
+      <div class="image-container">
+        <img src="images/Img-2.png" alt="Imagem do salão de beleza" />
+      </div>
+      <div class="about-us">
+        <h2>Sobre nós</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin
+          quis bibendum diam. Sed consequat nisl laoreet eros ultricies
+          pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula
+          risus. <br /><br />
+          In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut
+          pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec
+          luctus, nunc finibus elementum suscipit, tortor augue vulputate
+          sapien, vitae feugiat enim augue sed. <br /><br />
+          Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis
+          rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu
+          tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat,
+          nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend
+          dolor. Nullam eget dui at sem ullamcorper luctus.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
