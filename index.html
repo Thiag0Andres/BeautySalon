@@ -48,7 +48,7 @@
       section {
         padding: 50px 20px;
         display: flex;
-        flex-wrap: wrap; /* Adicionado para que os elementos quebrem linha em telas pequenas */
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
       }
@@ -58,7 +58,7 @@
         align-items: center;
         text-align: center;
         width: 50%;
-        margin-bottom: 20px; /* Adicionado espaço entre as seções */
+        margin-bottom: 20px;
       }
       .section-content h1 {
         font-size: 36px;
@@ -84,16 +84,16 @@
         font-weight: medium;
         color: #f9f9f9;
         padding: 10px 20px;
-        margin-bottom: 10px; /* Adicionado espaço entre o botão e o texto */
+        margin-bottom: 10px;
       }
       .image-container {
         width: 50%;
         text-align: center;
       }
       .image-container img {
-        width: 100%; /* A imagem agora ocupará 100% da largura da div pai */
-        max-width: 561px; /* Limitando a largura máxima da imagem */
-        height: auto; /* Altura automática para manter a proporção */
+        width: 100%;
+        max-width: 561px;
+        height: auto;
       }
       .about-us {
         width: 50%;
@@ -110,13 +110,116 @@
         color: #767676;
         margin-bottom: 10px;
       }
-
-      /* Adicionando regras de mídia query para telas menores */
+      .services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .services h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0f241d;
+        margin-bottom: 20px;
+      }
+      .services p {
+        font-size: 18px;
+        color: #767676;
+        margin-bottom: 40px;
+      }
+      .service-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .service-card {
+        background-color: #fff;
+        border: 1px solid #e4e4e4;
+        border-bottom: 3px solid #69b99d;
+        border-radius: 5px;
+        width: 300px;
+        padding: 30px;
+        margin: 10px;
+        text-align: center;
+      }
+      .service-card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+      .service-card h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #0f241d;
+      }
+      .service-card p {
+        font-size: 16px;
+        color: #767676;
+      }
+      .testimonials {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .testimonials h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0f241d;
+        margin-bottom: 20px;
+      }
+      .testimonial-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .testimonial-card {
+        background-color: #fff;
+        border: 1px solid #e4e4e4;
+        border-radius: 5px;
+        width: 45%;
+        padding: 30px;
+        margin: 10px;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .testimonial-card p {
+        font-size: 16px;
+        color: #767676;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+      }
+      .testimonial-author img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+      .testimonial-author span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #0f241d;
+      }
       @media (max-width: 768px) {
         .section-content,
         .image-container,
-        .about-us {
-          width: 100%; /* Altera a largura para ocupar 100% da tela */
+        .about-us,
+        .services,
+        .testimonial-cards {
+          width: 100%;
+        }
+        .service-cards,
+        .testimonial-cards {
+          flex-direction: column;
+          align-items: center;
         }
       }
     </style>
@@ -127,12 +230,12 @@
       <nav>
         <a href="#inicio" class="active">Início</a>
         <a href="#sobre">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Depoimentos</a>
+        <a href="#serviços">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
         <a href="#">Contato</a>
       </nav>
     </header>
-    <section id="#inicio">
+    <section id="inicio">
       <div class="section-content">
         <h1>Saúde natural para os seus cabelos</h1>
         <p>
@@ -144,7 +247,7 @@
         <img src="images/Img.png" alt="Imagem do salão de beleza" />
       </div>
     </section>
-    <section>
+    <section id="sobre">
       <div class="image-container">
         <img src="images/Img-2.png" alt="Imagem do salão de beleza" />
       </div>
@@ -166,6 +269,68 @@
           nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend
           dolor. Nullam eget dui at sem ullamcorper luctus.
         </p>
+      </div>
+    </section>
+    <section id="serviços" class="services">
+      <h2>Serviços</h2>
+      <p>
+        Com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de
+        inúmeros países com seus tratamentos exclusivos e totalmente naturais.
+      </p>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="images/hair.svg" alt="Terapia capilar" />
+          <h3>Terapia capilar</h3>
+          <p>
+            Terapia completa para couro cabeludo e fios, protegendo todos os
+            tipos de cabelos, inclusive os longos e finos.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/scissors.svg" alt="Cortes" />
+          <h3>Cortes</h3>
+          <p>
+            A nossa equipe é repleta de profissionais renomados, famosos por
+            lançarem tendências com cortes diferenciados e clássicos.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/shampoo.svg" alt="Tratamentos" />
+          <h3>Tratamentos</h3>
+          <p>
+            O Beautysalon conta com diversos tratamentos naturais e totalmente
+            veganos, para qualquer tipo de cabelo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="depoimentos" class="testimonials">
+      <h2>Depoimentos de quem já passou por aqui</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p>
+            "Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
+            Certamente meu cabelo mudou muito depois que comecei a tratar
+            somente com produtos naturais e veganos. São profissionais incríveis
+            e qualificados."
+          </p>
+          <div class="testimonial-author">
+            <img src="images/wanessa-souza.png" alt="Wanessa Souza" />
+            <span>Wanessa Souza</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "Minha mãe frequenta o salão há anos e me levou um dia para
+            conhecer. Minha experiência foi incrível, eu continuo fazendo o a
+            terapia capilar e isso salvou o meu cabelo. Adoro todos os
+            profissionais do Beautysalon."
+          </p>
+          <div class="testimonial-author">
+            <img src="images/luna-falcao.png" alt="Luna Falcão" />
+            <span>Luna Falcão</span>
+          </div>
+        </div>
       </div>
     </section>
   </body>
