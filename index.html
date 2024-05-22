@@ -7,13 +7,17 @@
     <style>
       body {
         margin: 0;
-        padding: 0;
+        padding: 0 20px;
         background-color: #ffffff;
         font-family: "DM Sans", sans-serif;
         font-size: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+      header,
+      footer {
+        padding: 0;
       }
       header {
         display: flex;
@@ -208,16 +212,76 @@
         font-weight: bold;
         color: #0f241d;
       }
+      .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .contact h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #0f241d;
+        margin-bottom: 20px;
+      }
+      .contact p {
+        font-size: 18px;
+        color: #767676;
+        margin-bottom: 40px;
+      }
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .contact-info div {
+        width: 45%;
+        padding: 20px;
+        text-align: left;
+      }
+      .contact-info h3 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0f241d;
+        margin-bottom: 10px;
+      }
+      .contact-info p {
+        font-size: 16px;
+        color: #767676;
+      }
+      footer {
+        width: 100%;
+        background-color: #69b99d;
+        text-align: center;
+        padding: 20px;
+      }
+      footer p {
+        font-size: 14px;
+        color: #ffffff;
+      }
+      footer .social-icons {
+        margin-top: 10px;
+      }
+      footer .social-icons a {
+        color: #ffffff;
+        margin: 0 10px;
+        font-size: 24px;
+        text-decoration: none;
+      }
       @media (max-width: 768px) {
         .section-content,
         .image-container,
         .about-us,
         .services,
-        .testimonial-cards {
+        .testimonial-cards,
+        .contact-info {
           width: 100%;
         }
         .service-cards,
-        .testimonial-cards {
+        .testimonial-cards,
+        .contact-info {
           flex-direction: column;
           align-items: center;
         }
@@ -232,7 +296,7 @@
         <a href="#sobre">Sobre</a>
         <a href="#serviços">Serviços</a>
         <a href="#depoimentos">Depoimentos</a>
-        <a href="#">Contato</a>
+        <a href="#contato">Contato</a>
       </nav>
     </header>
     <section id="inicio">
@@ -254,6 +318,8 @@
       <div class="about-us">
         <h2>Sobre nós</h2>
         <p>
+          Fundado em 2023, o nosso salão é reconhecido pelos excelentes
+          resultados e pela equipe extremamente qualificada.<br /><br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin
           quis bibendum diam. Sed consequat nisl laoreet eros ultricies
@@ -271,67 +337,109 @@
         </p>
       </div>
     </section>
-    <section id="serviços" class="services">
-      <h2>Serviços</h2>
-      <p>
-        Com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de
-        inúmeros países com seus tratamentos exclusivos e totalmente naturais.
-      </p>
-      <div class="service-cards">
-        <div class="service-card">
-          <img src="images/hair.svg" alt="Terapia capilar" />
-          <h3>Terapia capilar</h3>
-          <p>
-            Terapia completa para couro cabeludo e fios, protegendo todos os
-            tipos de cabelos, inclusive os longos e finos.
-          </p>
-        </div>
-        <div class="service-card">
-          <img src="images/scissors.svg" alt="Cortes" />
-          <h3>Cortes</h3>
-          <p>
-            A nossa equipe é repleta de profissionais renomados, famosos por
-            lançarem tendências com cortes diferenciados e clássicos.
-          </p>
-        </div>
-        <div class="service-card">
-          <img src="images/shampoo.svg" alt="Tratamentos" />
-          <h3>Tratamentos</h3>
-          <p>
-            O Beautysalon conta com diversos tratamentos naturais e totalmente
-            veganos, para qualquer tipo de cabelo.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="depoimentos" class="testimonials">
-      <h2>Depoimentos de quem já passou por aqui</h2>
-      <div class="testimonial-cards">
-        <div class="testimonial-card">
-          <p>
-            "Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
-            Certamente meu cabelo mudou muito depois que comecei a tratar
-            somente com produtos naturais e veganos. São profissionais incríveis
-            e qualificados."
-          </p>
-          <div class="testimonial-author">
-            <img src="images/wanessa-souza.png" alt="Wanessa Souza" />
-            <span>Wanessa Souza</span>
+    <section id="serviços">
+      <div class="services">
+        <h2>Nossos serviços</h2>
+        <p>
+          Oferecemos uma ampla gama de serviços para atender todas as suas
+          necessidades de cuidados com os cabelos.
+        </p>
+        <div class="service-cards">
+          <div class="service-card">
+            <img src="images/hair.svg" alt="Serviço 1" />
+            <h3>Tratamento Capilar</h3>
+            <p>
+              Tratamentos personalizados para a saúde e beleza dos seus cabelos.
+            </p>
           </div>
-        </div>
-        <div class="testimonial-card">
-          <p>
-            "Minha mãe frequenta o salão há anos e me levou um dia para
-            conhecer. Minha experiência foi incrível, eu continuo fazendo o a
-            terapia capilar e isso salvou o meu cabelo. Adoro todos os
-            profissionais do Beautysalon."
-          </p>
-          <div class="testimonial-author">
-            <img src="images/luna-falcao.png" alt="Luna Falcão" />
-            <span>Luna Falcão</span>
+          <div class="service-card">
+            <img src="images/scissors.svg" alt="Serviço 2" />
+            <h3>Corte de Cabelo</h3>
+            <p>Cortes modernos e clássicos para realçar sua beleza natural.</p>
+          </div>
+          <div class="service-card">
+            <img src="images/shampoo.svg" alt="Serviço 3" />
+            <h3>Penteados</h3>
+            <p>
+              Penteados elegantes para ocasiões especiais e para o dia a dia.
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <section id="depoimentos">
+      <div class="testimonials">
+        <h2>Depoimentos de quem já passou por aqui</h2>
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <p>
+              "Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
+              Certamente meu cabelo mudou muito depois que comecei a tratar
+              somente com produtos naturais e veganos. São profissionais
+              incríveis e qualificados."
+            </p>
+            <div class="testimonial-author">
+              <img src="images/wanessa-souza.png" alt="Wanessa Souza" />
+              <span>Wanessa Souza</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Minha mãe frequenta o salão há anos e me levou um dia para
+              conhecer. Minha experiência foi incrível, eu continuo fazendo o a
+              terapia capilar e isso salvou o meu cabelo. Adoro todos os
+              profissionais do Beautysalon."
+            </p>
+            <div class="testimonial-author">
+              <img src="images/luna-falcao.png" alt="Luna Falcão" />
+              <span>Luna Falcão</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "A melhor experiência que já tive em um salão. Meus cabelos nunca
+              estiveram tão saudáveis!"
+            </p>
+            <div class="testimonial-author">
+              <img src="images/client1.jpg" alt="Cliente 1" />
+              <span>Maria Silva</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>"Equipe incrível e um ambiente acolhedor. Recomendo a todos!"</p>
+            <div class="testimonial-author">
+              <img src="images/client2.jpg" alt="Cliente 2" />
+              <span>João Souza</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="contact">
+        <h2>Contato</h2>
+        <p>
+          Entre em contato conosco para agendar um horário ou tirar dúvidas.
+        </p>
+        <div class="contact-info">
+          <div>
+            <h3>Endereço</h3>
+            <p>Rua do Salão, 123, São Paulo, SP</p>
+          </div>
+          <div>
+            <h3>Telefone</h3>
+            <p>(11) 1234-5678</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Beauty Salon. Todos os direitos reservados.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/youtube.svg" alt="Youtube" /></a>
+      </div>
+    </footer>
   </body>
 </html>
