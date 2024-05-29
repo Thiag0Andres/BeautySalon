@@ -15,10 +15,12 @@
         flex-direction: column;
         align-items: center;
       }
+
       header,
       footer {
         padding: 0;
       }
+
       header {
         display: flex;
         justify-content: space-between;
@@ -28,15 +30,18 @@
         padding: 20px;
         border-bottom: 1px solid #e4e4e4;
       }
+
       .logo {
         width: 164px;
         height: 25px;
         margin-left: 20px;
       }
+
       nav {
         display: flex;
         margin-right: 20px;
       }
+
       nav a {
         text-decoration: none;
         color: #0f241d;
@@ -45,17 +50,27 @@
         margin-left: 20px;
         padding-bottom: 10px;
       }
+
       nav a:hover,
       nav a.active {
         color: #69b99d;
       }
+
+      #inicio,
+      #serviços,
+      #contato {
+        background-color: #f9f9f9;
+      }
+
       section {
-        padding: 50px 20px;
+        width: 100%;
+        padding: 60px 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
       }
+
       .section-content {
         display: flex;
         flex-direction: column;
@@ -64,17 +79,20 @@
         width: 50%;
         margin-bottom: 20px;
       }
+
       .section-content h1 {
         font-size: 36px;
         font-weight: bold;
         color: #0f241d;
         margin-bottom: 10px;
       }
+
       .section-content p {
         font-size: 18px;
         color: #767676;
         margin-bottom: 10px;
       }
+
       .button {
         height: 56px;
         background-color: #69b99d;
@@ -90,30 +108,36 @@
         padding: 10px 20px;
         margin-bottom: 10px;
       }
+
       .image-container {
         width: 50%;
         text-align: center;
       }
+
       .image-container img {
         width: 100%;
         max-width: 561px;
         height: auto;
       }
+
       .about-us {
         width: 50%;
         text-align: center;
       }
+
       .about-us h2 {
         font-size: 36px;
         font-weight: bold;
         color: #0f241d;
         margin-bottom: 10px;
       }
+
       .about-us p {
         font-size: 18px;
         color: #767676;
         margin-bottom: 10px;
       }
+
       .services {
         width: 100%;
         display: flex;
@@ -121,22 +145,26 @@
         justify-content: center;
         text-align: center;
       }
+
       .services h2 {
         font-size: 36px;
         font-weight: bold;
         color: #0f241d;
         margin-bottom: 20px;
       }
+
       .services p {
         font-size: 18px;
         color: #767676;
         margin-bottom: 40px;
       }
+
       .service-cards {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
       }
+
       .service-card {
         background-color: #fff;
         border: 1px solid #e4e4e4;
@@ -147,21 +175,25 @@
         margin: 10px;
         text-align: center;
       }
+
       .service-card img {
         width: 80px;
         height: 80px;
         margin-bottom: 20px;
       }
+
       .service-card h3 {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 10px;
         color: #0f241d;
       }
+
       .service-card p {
         font-size: 16px;
         color: #767676;
       }
+
       .testimonials {
         width: 100%;
         display: flex;
@@ -170,17 +202,20 @@
         text-align: center;
         padding: 50px 20px;
       }
+
       .testimonials h2 {
         font-size: 36px;
         font-weight: bold;
         color: #0f241d;
         margin-bottom: 20px;
       }
+
       .testimonial-cards {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
       }
+
       .testimonial-card {
         background-color: #fff;
         border: 1px solid #e4e4e4;
@@ -191,27 +226,32 @@
         text-align: left;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
+
       .testimonial-card p {
         font-size: 16px;
         color: #767676;
         margin-bottom: 20px;
         font-style: italic;
       }
+
       .testimonial-author {
         display: flex;
         align-items: center;
       }
+
       .testimonial-author img {
         border-radius: 50%;
         width: 40px;
         height: 40px;
         margin-right: 10px;
       }
+
       .testimonial-author span {
         font-size: 16px;
         font-weight: bold;
         color: #0f241d;
       }
+
       .contact {
         width: 100%;
         display: flex;
@@ -220,85 +260,145 @@
         text-align: center;
         padding: 50px 20px;
       }
+
       .contact h2 {
         font-size: 36px;
         font-weight: bold;
         color: #0f241d;
         margin-bottom: 20px;
       }
+
       .contact p {
         font-size: 18px;
         color: #767676;
         margin-bottom: 40px;
       }
-      .contact-info {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .contact-info div {
-        width: 45%;
-        padding: 20px;
-        text-align: left;
-      }
-      .contact-info h3 {
-        font-size: 24px;
-        font-weight: bold;
-        color: #0f241d;
-        margin-bottom: 10px;
-      }
-      .contact-info p {
-        font-size: 16px;
-        color: #767676;
-      }
+
       footer {
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
         background-color: #69b99d;
         text-align: center;
-        padding: 20px;
+        padding: 50px 20px;
       }
+
       footer p {
         font-size: 14px;
         color: #ffffff;
+        text-align: left;
       }
+
       footer .social-icons {
         margin-top: 10px;
       }
+
       footer .social-icons a {
         color: #ffffff;
-        margin: 0 10px;
+        margin: 0 10px 0 0;
         font-size: 24px;
         text-decoration: none;
       }
+
+      .menu-icon {
+        display: none;
+        cursor: pointer;
+        margin-right: 20px;
+        width: 25px;
+        height: auto;
+      }
+
+      .mobile-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        width: 100%;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        border-top: 1px solid #e4e4e4;
+      }
+
+      .mobile-nav a {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #e4e4e4;
+        color: #0f241d;
+        text-decoration: none;
+      }
+
       @media (max-width: 768px) {
+        nav {
+          display: none;
+        }
+
+        .menu-icon {
+          display: flex;
+        }
         .section-content,
         .image-container,
         .about-us,
         .services,
-        .testimonial-cards,
-        .contact-info {
+        .testimonial-cards {
           width: 100%;
         }
         .service-cards,
-        .testimonial-cards,
-        .contact-info {
+        .testimonial-cards {
           flex-direction: column;
           align-items: center;
+        }
+
+        .service-card {
+          width: 250px;
+        }
+
+        .testimonial-card {
+          width: 70%;
+        }
+
+        .about-us {
+          text-align: left;
+        }
+
+        .form-items {
+          width: 100%;
+        }
+
+        #sobre {
+          flex-direction: column-reverse;
+        }
+
+        footer {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
         }
       }
     </style>
   </head>
   <body>
     <header>
-      <div class="logo"><img src="images/Logo.png" alt="Logo" /></div>
+      <img src="images/Logo.png" alt="Beauty Salon Logo" class="logo" />
       <nav>
-        <a href="#inicio" class="active">Início</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
         <a href="#serviços">Serviços</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#contato">Contato</a>
       </nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <img src="images/menu.svg" />
+      </div>
     </header>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#inicio" onclick="toggleMenu()">Início</a>
+      <a href="#sobre" onclick="toggleMenu()">Sobre nós</a>
+      <a href="#serviços" onclick="toggleMenu()">Serviços</a>
+      <a href="#depoimentos" onclick="toggleMenu()">Depoimentos</a>
+      <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </div>
     <section id="inicio">
       <div class="section-content">
         <h1>Saúde natural para os seus cabelos</h1>
@@ -318,22 +418,30 @@
       <div class="about-us">
         <h2>Sobre nós</h2>
         <p>
-          Fundado em 2023, o nosso salão é reconhecido pelos excelentes
-          resultados e pela equipe extremamente qualificada.<br /><br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin
-          quis bibendum diam. Sed consequat nisl laoreet eros ultricies
-          pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula
-          risus. <br /><br />
-          In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut
-          pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec
-          luctus, nunc finibus elementum suscipit, tortor augue vulputate
-          sapien, vitae feugiat enim augue sed. <br /><br />
-          Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis
-          rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu
-          tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat,
-          nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend
-          dolor. Nullam eget dui at sem ullamcorper luctus.
+          Desde a sua fundação em 2023, o nosso salão tem sido um refúgio para
+          aqueles que buscam mais do que apenas um serviço de beleza. Com uma
+          equipe apaixonada e altamente qualificada, estamos comprometidos em
+          fornecer não apenas resultados excepcionais, mas também uma
+          experiência que nutre a mente, o corpo e a alma de nossos clientes.
+        </p>
+        <p>
+          No coração de São Paulo, o nosso salão se destaca como um oásis de
+          tranquilidade em meio à agitação da cidade. Aqui, cada tratamento é
+          uma jornada personalizada, projetada para realçar a beleza natural de
+          nossos clientes, ao mesmo tempo em que rejuvenesce e revitaliza.
+        </p>
+        <p>
+          Nosso compromisso com a excelência vai além dos resultados estéticos;
+          é um compromisso com a saúde e o bem-estar de nossos clientes.
+          Utilizamos apenas os melhores produtos e técnicas, sempre mantendo um
+          foco firme na segurança e na integridade de cada tratamento.
+        </p>
+        <p>
+          Na era da autenticidade, acreditamos que a verdadeira beleza reside na
+          individualidade. É por isso que celebramos a diversidade em todas as
+          suas formas e buscamos criar um espaço inclusivo onde todos se sintam
+          bem-vindos e valorizados. Venha nos visitar e descubra o que nos torna
+          únicos.
         </p>
       </div>
     </section>
@@ -369,7 +477,7 @@
     </section>
     <section id="depoimentos">
       <div class="testimonials">
-        <h2>Depoimentos de quem já passou por aqui</h2>
+        <h2>O que nossos clientes dizem</h2>
         <div class="testimonial-cards">
           <div class="testimonial-card">
             <p>
@@ -417,20 +525,91 @@
     </section>
     <section id="contato">
       <div class="contact">
-        <h2>Contato</h2>
-        <p>
-          Entre em contato conosco para agendar um horário ou tirar dúvidas.
+        <h2
+          style="
+            font-size: 36px;
+            font-weight: bold;
+            color: #0f241d;
+            margin-bottom: 20px;
+          "
+        >
+          Entre em contato
+        </h2>
+        <p style="font-size: 18px; color: #767676; margin-bottom: 40px">
+          Para agendar um horário ou saber mais sobre os nossos serviços, entre
+          em contato conosco.
         </p>
-        <div class="contact-info">
-          <div>
-            <h3>Endereço</h3>
-            <p>Rua do Salão, 123, São Paulo, SP</p>
+
+        <form
+          style="
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div class="form-items" style="width: 80%">
+            <input
+              type="text"
+              required
+              style="
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #e4e4e4;
+                border-radius: 5px;
+              "
+              placeholder="Nome"
+            />
+            <input
+              type="email"
+              required
+              style="
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #e4e4e4;
+                border-radius: 5px;
+              "
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              required
+              style="
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #e4e4e4;
+                border-radius: 5px;
+              "
+              placeholder="Telefone"
+            />
+
+            <button
+              class="button-about-us"
+              style="
+                height: 56px;
+                background-color: #69b99d;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: medium;
+                color: #f9f9f9;
+                padding: 10px 20px;
+                margin: 10px 0 0 0;
+              "
+              onclick="sendEmail()"
+            >
+              Enviar
+            </button>
           </div>
-          <div>
-            <h3>Telefone</h3>
-            <p>(11) 1234-5678</p>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
     <footer>
@@ -441,5 +620,41 @@
         <a href="#"><img src="images/youtube.svg" alt="Youtube" /></a>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const mobileNav = document.getElementById("mobileNav");
+        if (mobileNav.style.display === "flex") {
+          mobileNav.style.display = "none";
+        } else {
+          mobileNav.style.display = "flex";
+        }
+      }
+
+      function sendEmail() {
+        var name = document.querySelector('input[placeholder="Nome"]').value;
+        var email = document.querySelector('input[placeholder="Email"]').value;
+        var phone = document.querySelector(
+          'input[placeholder="Telefone"]'
+        ).value;
+
+        var mensage =
+          "Olá,\n\nGostaria de agendar um horário.\n\nNome: " +
+          name +
+          "\nEmail: " +
+          email +
+          "\nTelefone: " +
+          phone +
+          "\n\nObrigado.";
+
+        var link =
+          "mailto:contato@beautysalon.com?subject=Agendamento&body=" +
+          encodeURIComponent(mensage);
+        window.location.href = link;
+      }
+
+      document
+        .querySelector(".button-about-us")
+        .addEventListener("click", sendEmail);
+    </script>
   </body>
 </html>
